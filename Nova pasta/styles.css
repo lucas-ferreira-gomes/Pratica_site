@@ -118,8 +118,10 @@ body{
     height: 15rem;
     border-radius: 0.438rem;
     border: 3px solid var(--color-pri);
-    margin: auto;
+    margin: 5%  auto;
     padding: 2%;
+    transform: rotate(-1deg);
+    box-shadow: -9px 20px 11.9px rgba(0, 0, 0, 0.55);
 }
 .card_ent h1{
     font-family: var(--font-ter);
@@ -155,7 +157,7 @@ footer .botao_f{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    box-shadow: 0px -1px 10.9px rgba(0, 0, 0, 0.24);
     background-color: #E3DDDD;
     margin: auto;
     text-align: center;
