@@ -67,6 +67,7 @@
 /*///Cabeça/////////////////////////*/
 body{
     background-color: var(--color-seg);
+    max-height: 100vh;
 }
 .menu__inicial{
     width: 100%;
@@ -139,33 +140,28 @@ body{
     background-color: var(--color-qua);
 }
 
-@media (min-width: 601px) {
-.card_me{
-        flex-direction: row;
-        align-items: center;
-    }
-    .card_me h2{
-        margin: 30px auto;
-    }
-}
 
 /*//final////////////////////////////*/
 footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     position: absolute;
     bottom: 0;
-    margin: 1rem 100vh;
+    margin: 1rem;
 
 }
 footer .botao_f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: #E3DDDD;
-    margin: 2rem 100vh 0 100vh;
+    margin: auto;
     text-align: center;
     width: 70px; 
     height: 30px;
     border-radius: 100px 100px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--color-seg);
 }
 
@@ -173,3 +169,34 @@ footer .botao_f{
     color: #292929;
 }
 
+
+/*/////////////////////////*/
+@media (min-width: 601px) {
+    .card_me{
+        flex-direction: row;
+        align-items: center;
+    }
+    .card_me h2{
+        margin: 30px auto;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        margin: 1rem 100vh;
+    
+    }
+    footer .botao_f{
+        background-color: #E3DDDD;
+        margin: 2rem 100vh 0 100vh;
+        text-align: center;
+        width: 70px; 
+        height: 30px;
+        border-radius: 100px 100px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-seg);
+    }
+
+
+}
