@@ -104,9 +104,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    margin: 23%;
-    background-color: #92BFB1;
+
 }
 .card_me h2{
     margin: auto;
@@ -123,7 +121,7 @@ body{
     border-radius: 0.438rem;
     border: 3px solid var(--color-pri);
     margin: 5%  auto;
-    padding: 2%;
+    padding: 3%;
     transform: rotate(-1deg);
     box-shadow: -9px 20px 11.9px rgba(0, 0, 0, 0.55);
 }
@@ -141,6 +139,7 @@ body{
 .card_ent button{
     width: 7rem;
     height: 2rem;
+    padding-bottom: 2%;
     border: 2px solid var(--color-pri);
     border-radius: 1rem;
     background-color: var(--color-qua);
