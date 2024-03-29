@@ -97,19 +97,10 @@ body{
     color: var(--color-pri);
 }
 /*//corpo/////////////////////////*/
-@media screen and (max-width: 600px){
-    .card_me{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .card_me h2{
-        margin: 30px auto;
-    }
-}
 
 .card_me{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .card_me h2{
@@ -148,6 +139,18 @@ body{
     background-color: var(--color-qua);
 }
 
+@media (min-width: 601px) {
+    .card_me{
+        background-color: #F4AC45;
+    }
+.card_me{
+        flex-direction: row;
+        align-items: center;
+    }
+    .card_me h2{
+        margin: 30px auto;
+    }
+}
 
 /*//final////////////////////////////*/
 footer{
