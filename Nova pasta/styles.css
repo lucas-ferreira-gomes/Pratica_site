@@ -1,0 +1,175 @@
+/*reset css
+.menu__inicial li:first-child {
+    margin-right: 70%;   
+    float: right;
+}    margin-left: 0;
+*/
+/*
+
+
+
+.menu__inicial li {
+    float: right;
+} 
+.menu__inicial li:first-child {
+    float: left; 
+} 
+
+
+.geo-regular {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .geo-regular-italic {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .genos-<uniquifier> {
+    font-family: "Genos", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+  .gayathri-thin {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.gayathri-regular {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gayathri-bold {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+  */
+/*////Variaveis/////////////////////////*/
+:root { 
+    --color-qua: #F4AC45;
+    --color-tre: #92BFB1;
+    --color-seg: #DAD6D6;
+    --color-pri: #000000;
+    --font-cab: "Geo", sans-serif;
+    --font-sab: "Genos", sans-serif;
+    --font-ter: "Gayathri", sans-serif;
+
+}
+/*///Cabeça/////////////////////////*/
+body{
+    background-color: var(--color-seg);
+}
+.menu__inicial{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.menu__inicial ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25rem;
+}
+.menu__inicial li:first-child hr{
+    border-top: 0.094rem solid var(--color-pri);
+    margin: 0.094rem auto 0 0;
+}
+.menu__inicial ul:first-child span{
+    width: 75%;
+}
+.menu__inicial hr{
+    border: none;
+    border-top: 0.094rem solid var(--color-pri);
+    width: 50%;
+    margin: 0.094rem 0 0 auto;
+    border-radius: 0.094rem;
+}
+.menu__inicial a{
+    font-size: 1.125rem;
+    margin: 0.125rem;
+    color: var(--color-pri);
+}
+/*//corpo/////////////////////////*/
+@media screen and (max-width: 600px){
+    .card_me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card_me h2{
+        margin: 30px auto;
+    }
+}
+
+.card_me{
+    display: flex;
+    align-items: center;
+}
+.card_me h2{
+    margin: auto;
+    font-size: 2.125rem;
+    font-family: var(--font-sab);
+    font-weight: 600;
+}
+.card_ent{
+    display: flex;
+	flex-direction: column;
+    background-color: var(--color-tre);
+    width: 10rem;
+    height: 15rem;
+    border-radius: 0.438rem;
+    border: 3px solid var(--color-pri);
+    margin: auto;
+    padding: 2%;
+}
+.card_ent h1{
+    font-family: var(--font-ter);
+    font-size: 2rem;
+    margin: 1% auto 5% auto;
+}
+.card_ent p{
+    margin: auto;
+    font-family: var(--font-ter);
+    font-size: 1rem;
+}
+
+.card_ent button{
+    width: 7rem;
+    height: 2rem;
+    border: 2px solid var(--color-pri);
+    border-radius: 1rem;
+    background-color: var(--color-qua);
+}
+
+
+/*//final////////////////////////////*/
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: 1rem 100vh;
+
+}
+footer .botao_f{
+    background-color: #E3DDDD;
+    margin: 2rem 100vh 0 100vh;
+    text-align: center;
+    width: 70px; 
+    height: 30px;
+    border-radius: 100px 100px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-seg);
+}
+
+.botao_f a{
+    color: #292929;
+}
+
