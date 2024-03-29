@@ -140,9 +140,6 @@ body{
 }
 
 @media (min-width: 601px) {
-    .card_me{
-        background-color: #F4AC45;
-    }
 .card_me{
         flex-direction: row;
         align-items: center;
