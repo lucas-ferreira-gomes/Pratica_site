@@ -67,7 +67,7 @@
 /*///Cabeça/////////////////////////*/
 body{
     background-color: var(--color-seg);
-    max-height: 100vh;
+    height: 100%;
 }
 .menu__inicial{
     width: 100%;
@@ -101,10 +101,10 @@ body{
 /*//corpo/////////////////////////*/
 
 .card_me{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .card_me h2{
     margin: auto;
@@ -116,12 +116,18 @@ body{
     display: flex;
 	flex-direction: column;
     background-color: var(--color-tre);
+    border: 3px solid var(--color-pri);
+
+
     width: 10rem;
     height: 15rem;
-    border-radius: 0.438rem;
-    border: 3px solid var(--color-pri);
+
+
     margin: 5%  auto;
     padding: 3%;
+
+    
+    border-radius: 0.438rem;
     transform: rotate(-1deg);
     box-shadow: -9px 20px 11.9px rgba(0, 0, 0, 0.55);
 }
