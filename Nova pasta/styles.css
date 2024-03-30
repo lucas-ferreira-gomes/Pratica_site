@@ -70,10 +70,10 @@
 body{
     background-color: var(--color-seg);
     height: 100%;
-    width: 100vh;
+    width: 100%;
 }
 .menu__inicial{
-    width: 100vh;
+    width: 100%;
     margin-bottom: 4%;
 }
 .menu__inicial ul{
@@ -193,7 +193,7 @@ footer .botao_f{
         position: absolute;
         bottom: 0;
         margin: 1rem 100%;
-        width: 100vh;
+        width: 100%;
     }
     footer .botao_f{
         background-color: #E3DDDD;
@@ -210,6 +210,15 @@ footer .botao_f{
 }
 /*//////////////////////////////*/
 /*///interação//////////////////*/
-.card_ent:hover {
-  color: red; 
+@keyframes rotate-animation {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
 }
+.card_ent:hover {
+        animation: rotate-animation 0.5s linear infinite alternate; /* Aplicando a animação ao passar o mouse por cima */
+        transition: transform 0.2s ease;
+    }
