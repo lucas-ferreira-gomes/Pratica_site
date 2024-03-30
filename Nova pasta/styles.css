@@ -136,11 +136,12 @@ body{
     font-family: var(--font-ter);
     font-size: 2rem;
     margin: 1% auto 5% auto;
+    width: 80%;
 }
 .card_ent p{
     margin: auto;
     font-family: var(--font-ter);
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .card_ent button{
     width: 7rem;
@@ -149,6 +150,8 @@ body{
     border: 2px solid var(--color-pri);
     border-radius: 1rem;
     background-color: var(--color-qua);
+    font-size: 0.8rem;
+    color: var(--color-pri);
 }
 /*/////////////////////////////////*/
 /*//final////////////////////////////*/
