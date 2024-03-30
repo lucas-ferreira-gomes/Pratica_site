@@ -64,13 +64,16 @@
     --font-ter: "Gayathri", sans-serif;
 
 }
-/*///Cabeça/////////////////////////*/
+/*/////////////////////////////////*/
+/*///Inicio/////////////////////////*/
+/*/////////////////////////////////*/
 body{
     background-color: var(--color-seg);
     height: 100%;
+    width: 100vh;
 }
 .menu__inicial{
-    width: 100%;
+    width: 100vh;
     margin-bottom: 4%;
 }
 .menu__inicial ul{
@@ -98,8 +101,9 @@ body{
     margin: 1rem;
     color: var(--color-pri);
 }
+/*/////////////////////////////////*/
 /*//corpo/////////////////////////*/
-
+/*/////////////////////////////////*/
 .card_me{
     display: flex;
     flex-direction: column;
@@ -120,13 +124,10 @@ body{
 	flex-direction: column;
     background-color: var(--color-tre);
     border: 3px solid var(--color-pri);
-
     width: 100%;
     height: 19rem;
     margin: 20%;
     padding: 5%;
-
-    
     border-radius: 0.438rem;
     transform: rotate(-1deg);
     box-shadow: -9px 20px 11.9px rgba(0, 0, 0, 0.55);
@@ -141,7 +142,6 @@ body{
     font-family: var(--font-ter);
     font-size: 1rem;
 }
-
 .card_ent button{
     width: 7rem;
     height: 2rem;
@@ -150,9 +150,9 @@ body{
     border-radius: 1rem;
     background-color: var(--color-qua);
 }
-
-
+/*/////////////////////////////////*/
 /*//final////////////////////////////*/
+/*/////////////////////////////////*/
 footer{
     display: flex;
     justify-content: center;
@@ -179,9 +179,8 @@ footer .botao_f{
 .botao_f a{
     color: #292929;
 }
-
-
-/*/////////////////////////*/
+/*///////////////////////////////*/
+/*//Resposividade////////////////*/
 @media (min-width: 601px) {
     .card_me{
         flex-direction: row;
@@ -193,12 +192,12 @@ footer .botao_f{
     footer{
         position: absolute;
         bottom: 0;
-        margin: 1rem 100vh;
-    
+        margin: 1rem 100%;
+        width: 100vh;
     }
     footer .botao_f{
         background-color: #E3DDDD;
-        margin: 2rem 100vh 0 100vh;
+        margin: 2rem 100% 0 100%;
         text-align: center;
         width: 70px; 
         height: 30px;
@@ -208,6 +207,9 @@ footer .botao_f{
         justify-content: center;
         color: var(--color-seg);
     }
-
-
+}
+/*//////////////////////////////*/
+/*///interação//////////////////*/
+.card_ent:hover {
+  color: red; 
 }
